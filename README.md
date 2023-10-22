@@ -9,8 +9,8 @@ Some of the maps in Foxhole are split in sub-regions called *Outer*. Sometimes, 
 # Usage
 
 ```
-FoxholeUmapExporter 1.0.0
-Copyright (C) 2023 FoxholeUmapExporter
+FoxholeUmapTexturesExtractor 1.0.0
+Copyright (C) 2023 FoxholeUmapTexturesExtractor
 
   -i, --input       Required. Game directory containing PAK file(s).
   -o, --output      Required. Export directory to write the PNG tiles.

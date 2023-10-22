@@ -2,6 +2,10 @@
 
 Extract textures of all umap files for Foxhole video game.
 
+## Why this rather than UEViewer or FModel ?
+
+Some of the maps in Foxhole are split in sub-regions called *Outer*. Sometimes, different *Outers* shares the same heightmap texture names while they are different files. UEViewer/FModel exports will override them as they are being exported. This tool take *Outers* into account by creating a sub-folder for each of them.
+
 # Usage
 
 ```
@@ -18,7 +22,7 @@ Copyright (C) 2023 FoxholeUmapExporter
 # Run without building
 
 ```
-dotnet run --input "/Path/to/foxhole/pak" --output "/Path/to/export/tiles"
+dotnet run --input "C:\Program Files (x86)\Steam\steamapps\common\Foxhole\War\Content\Paks" --output ".\export"
 ```
 
 # Build
